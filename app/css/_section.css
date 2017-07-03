@@ -1,0 +1,10 @@
+.about-me{
+  padding: 78px 90px;
+  background-color:  #f9f9f9;
+  min-height: 600px;
+  box-sizing: border-box;
+}
+
+.content-column{
+  width: 30.7%;
+}

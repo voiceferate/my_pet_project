@@ -1,0 +1,36 @@
+header {
+  height: 568px;
+  background-color: rgb(53, 53, 65);
+}
+
+.header-wraper{
+  width: 444px;
+  padding-top: 193px;
+  margin: 0 auto;
+}
+
+.header-caption{
+  display: inline-block;
+  padding: 0 2rem;
+  border-top: 2px solid #fb6470;
+  border-bottom: 2px solid #fb6470;
+  margin-bottom: 5px;
+}
+
+.header-text{
+  margin: 0 0 43px 40px;
+  text-align: left;
+}
+
+.header-btn{
+  background-color:  #fb6470;
+  width: 170px;
+  height: 49px;
+  border-radius: 3px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-btn span{
+  line-height: 49px;
+}
