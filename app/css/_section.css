@@ -1,10 +1,47 @@
-.about-me{
-  padding: 78px 90px;
-  background-color:  #f9f9f9;
-  min-height: 600px;
+
+.content-column{
+  /*margin-top: 103px;*/
+  width: 30.7%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.content-column__text{
+  margin-bottom: 25px;
+}
+
+.skill-list{
+  list-style: none;
+  padding-left: 0;
+}
+
+.skill-list__item{
+  line-height: 51px;
+}
+
+.skill-list__link{
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #3e3e3e;
+  padding: 15px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.content-column{
-  width: 30.7%;
+.skill-list__link_bolder{
+  font-weight: bolder;
+  transition: .4s all;
+}
+
+.skill-list__link:hover .skill-list__link_bolder{
+  border-bottom: 2px solid #fb6470;
+}
+
+.main-photo{
+  display: inline-block;
+  width: 40.46%;
+  vertical-align: top;
+  margin-left: 190px;
 }

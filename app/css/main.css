@@ -92,7 +92,16 @@ textarea {
   margin: 0 auto;
 }
 
+.s-section-layout{
+  padding: 78px 90px;
+  background-color:  #f9f9f9;
+  min-height: 600px;
+  box-sizing: border-box;
+}
 
+.s-section-layout_white-bg{
+  background-color:  #fff;
+}
 
 
 
