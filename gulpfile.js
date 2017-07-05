@@ -15,7 +15,7 @@ var paths = {
 
 
 gulp.task('fileinclude', function() {
-  return gulp.src(['app/html/*.html'])
+  return gulp.src(['app/html/*.html', '!app/html/_*.html'])
     .pipe(fileinclude({
       prefix: '@@',
       basepath: 'app/html'

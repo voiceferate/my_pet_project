@@ -87,6 +87,13 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a,
+img, ul, li, form, label, table, caption{
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+
+}
+
 .wrapper{
   width: 1300px;
   margin: 0 auto;
@@ -97,6 +104,7 @@ textarea {
   background-color:  #f9f9f9;
   min-height: 600px;
   box-sizing: border-box;
+  border-bottom: 1px solid #3e3e3e;
 }
 
 .s-section-layout_white-bg{

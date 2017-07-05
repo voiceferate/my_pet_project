@@ -146,11 +146,6 @@ samp {
   font-size: 1em; /* 2 */
 }
 
-ul {
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-}
-
 
 /**
  * Add the correct font style in Android 4.3-.
