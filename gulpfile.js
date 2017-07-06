@@ -2,6 +2,7 @@
 
 var gulp        = require('gulp');
 var fileinclude = require('gulp-file-include');
+var uglify      = require('gulp-uglify');
 var browserSync = require('browser-sync');
 var concatCss	  = require('gulp-concat-css');
 var cssnano		  = require('gulp-cssnano');
@@ -9,8 +10,9 @@ var rename		  = require('gulp-rename');
 
 
 var paths = {
-  css:['app/css/*.css'],
-  html:['app/html/*.html', 'app/html/components/*.html']
+  css:  ['app/css/*.css'],
+  html: ['app/html/*.html', 'app/html/components/*.html'],
+  js:   ['app/js/*.js']
 };
 
 
@@ -24,6 +26,17 @@ gulp.task('fileinclude', function() {
     .pipe(browserSync.reload({stream: true}));
 });
 
+
+gulp.task('fileincludeJs', function() {
+  return gulp.src(['app/js/*.js', '!app/js/_*.js'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: 'app/js'
+    }))
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/js/'))
+    .pipe(browserSync.reload({stream: true}));
+});
 
 gulp.task('concatCss', function () {
   return gulp.src('app/css/*.css')
@@ -44,7 +57,8 @@ gulp.task('browser-sync', function() {
 });
 
 
-gulp.task('watch', ['browser-sync', 'concatCss', 'fileinclude'], function() {
+gulp.task('watch', ['browser-sync', 'concatCss', 'fileinclude', 'fileincludeJs'], function() {
 	gulp.watch(paths.css, ['concatCss']);
 	gulp.watch(paths.html, ['fileinclude', browserSync.reload]);
+  gulp.watch(paths.js, ['fileincludeJs']);
 });

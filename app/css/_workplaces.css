@@ -4,6 +4,18 @@
   margin: 0 auto;
   font-size: 0;
   text-align: center;
+  position: relative;
+}
+
+.section-content:after{
+  content: '';
+  display: block;
+  width: 2px;
+  height: 100%;
+  background-color: #3e3e3e;
+  position: absolute;
+  top: 0;
+  left: 49.95%;
 }
 
 .section-content__col {
@@ -14,10 +26,8 @@
 }
 
 .section-content__center-line {
-  width: 2px;
   height: 100%;
   display: inline-block;
-  background-color: #3e3e3e;
 }
 
 .content-card {
@@ -29,6 +39,7 @@
   box-sizing: border-box;
   text-align: left;
   vertical-align: top;
+  position: relative;
 }
 
 .content-card_left{
@@ -36,9 +47,29 @@
   margin-top: 170px;
 }
 
+.content-card_left__label{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #3e3e3e;
+  position: absolute;
+  bottom: 15px;
+  right: -68px;
+}
+
 .content-card_right{
   margin-left: 42px;
   margin-bottom: 170px;
+}
+
+.content-card_right__label{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #3e3e3e;
+  position: absolute;
+  top: 15px;
+  left: -68px;
 }
 
 .content-card_right:last-child{
