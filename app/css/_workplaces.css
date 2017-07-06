@@ -47,7 +47,7 @@
   margin-top: 170px;
 }
 
-.content-card_left__label{
+.content-card_left-label{
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -62,7 +62,7 @@
   margin-bottom: 170px;
 }
 
-.content-card_right__label{
+.content-card_right-label{
   width: 50px;
   height: 50px;
   border-radius: 50%;
