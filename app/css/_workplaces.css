@@ -57,6 +57,11 @@
   right: -67px;
 }
 
+.ccl{
+  transition: background-color .8s;
+  z-index: 1000;
+}
+
 .content-card_right{
   margin-left: 42px;
   margin-bottom: 170px;

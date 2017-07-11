@@ -5,13 +5,13 @@
 
 function createLeftCircle() {
   var circle_displayed_left = document.createElement('div');
-  circle_displayed_left.className = 'content-card_left-label';
+  circle_displayed_left.className = 'ccl content-card_left-label';
   return circle_displayed_left
 }
 
 function createRightCircle() {
   var circle_displayed_right = document.createElement('div');
-  circle_displayed_right.className = 'content-card_right-label';
+  circle_displayed_right.className = 'ccl content-card_right-label';
   return circle_displayed_right;
 }
 
@@ -27,5 +27,24 @@ for (var i = circle_parent_element.length - 1; i >= 0; i--) {
     circle_parent_element[i].appendChild(createRightCircle());
   }
 }
+
+
+var circle_hover = document.querySelectorAll('div.ccl');
+
+window.addEventListener('scroll', function() {
+    
+  var highlight_area = 0
+
+    for (var i = circle_hover.length - 1; i >= 0; i--) {
+      var coordinates = circle_hover[i].getBoundingClientRect().top;
+      if (coordinates > 100 && coordinates < 250) {
+        circle_hover[i].style = 'background-color: #fb6470;'
+      } else {
+        circle_hover[i].style = 'background-color: #3e3e3e;'
+      }
+    }
+
+    
+    });
 
 })();
