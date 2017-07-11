@@ -111,6 +111,12 @@ img, ul, li, form, label, table, caption{
   background-color:  #fff;
 }
 
+.s-section-layout_skils{
+  padding: 86px 64px;
+  min-height: 428px;
+  background-color: rgb(53, 53, 65);
+}
+
 
 
 

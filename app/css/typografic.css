@@ -21,6 +21,10 @@ h2.s-regular-header{
   margin-bottom: 53px;
 }
 
+.s-regular-header_white{
+  color: #fff;
+}
+
 h3{
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1.375em;
