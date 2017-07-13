@@ -1,0 +1,37 @@
+.footer-form{
+  display: inline-block;
+  width: 60%;
+  vertical-align: top;
+}
+
+.footer-form__form{
+  font-size: 0;  
+}
+
+.footer-form__col-1{
+  font-size: 1rem;
+  display: inline-block;
+  width: 50%;
+}
+
+.footer-form__col-1>input{
+  color: #3e3e3e;
+  font-size: 14px;/* Приближение из-за подстановки шрифтов */
+  line-height: 50px;/* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.footer-form__textarea{
+  display: inline-block;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.contacts{
+  display: inline-block;
+  width: 38%;
+  vertical-align: top;
+
+}
