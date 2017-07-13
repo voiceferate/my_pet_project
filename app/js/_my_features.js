@@ -33,8 +33,6 @@ var circle_hover = document.querySelectorAll('div.ccl');
 
 window.addEventListener('scroll', function() {
     
-  var highlight_area = 0
-
     for (var i = circle_hover.length - 1; i >= 0; i--) {
       var coordinates = circle_hover[i].getBoundingClientRect().top;
       if (coordinates > 100 && coordinates < 250) {
