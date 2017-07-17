@@ -4,7 +4,9 @@ header {
 }
 
 .header-wraper{
-  width: 444px;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
   padding-top: 193px;
   margin: 0 auto;
 }
@@ -18,19 +20,19 @@ header {
 }
 
 .header-text{
-  margin: 0 0 43px 40px;
-  text-align: left;
+  margin-bottom: 2.5rem;
+  text-align: center;
 }
 
 .header-btn{
   background-color:  #fb6470;
   width: 170px;
-  height: 49px;
+  height: 3.0625rem;
   border-radius: 3px;
   margin: 0 auto;
   text-align: center;
 }
 
 .header-btn span{
-  line-height: 49px;
+  line-height: 3.0625rem;
 }

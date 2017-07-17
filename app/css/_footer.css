@@ -1,37 +1,89 @@
 .footer-form{
   display: inline-block;
-  width: 60%;
-  vertical-align: top;
+  width: 550px;
+}
+
+.footer-form__caption{
+  margin-bottom: 25px;
 }
 
 .footer-form__form{
   font-size: 0;  
+  text-align: right;
 }
 
 .footer-form__col-1{
   font-size: 1rem;
   display: inline-block;
-  width: 50%;
+  width: 48%;
 }
 
-.footer-form__col-1>input{
+.footer-form__input{
   color: #3e3e3e;
-  font-size: 14px;/* Приближение из-за подстановки шрифтов */
-  line-height: 50px;/* Приближение из-за подстановки шрифтов */
+  font-size: 14px;
+  line-height: 35px;
   text-align: left;
+  min-width: 260px;
+  margin-bottom: 20px;
 }
 
 .footer-form__textarea{
   display: inline-block;
-  width: 50%;
+  width: 48%;
+  max-width: 260px;
+  height: 145px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  margin-left: 25px;
+  text-align: right;
+  vertical-align: top;
 }
+
+.footer-form__btn{
+  display: inline-block;
+  background-color: #fb6470;
+  height: 35px;
+  padding: 0 15px;
+  border: 0;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  text-align: right;
+}
+
 
 .contacts{
   display: inline-block;
   width: 38%;
   vertical-align: top;
+  margin-left: 133px;
+}
 
+.contacts__caption{
+  margin-bottom: 18px;
+  padding-left: 77px;
+  position: relative;
+}
+
+.contacts__caption:before{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-color: #fb6470;
+  left: 0;
+  top: 70%;
+}
+
+.contacts__info{
+  margin-bottom: 32px;
+  padding-left: 77px;
+}
+
+.copyright{
+  margin-top: 30px;
+  text-align: center;
+  opacity: .4;
 }

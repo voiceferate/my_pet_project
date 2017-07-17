@@ -15,6 +15,7 @@
   -o-flex-direction: row;
   flex-direction: row;
   justify-content: space-around;
+  text-align: left;
 }
 
 .skill-column{
