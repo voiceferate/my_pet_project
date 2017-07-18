@@ -7,7 +7,11 @@
   .s-section-layout{
     padding: 20px 15px;
     text-align: left;
- }
+  }
+
+  .about-me{
+    text-align: center;
+  }
 
   .content-column{
     width: 100%;
@@ -117,6 +121,10 @@
 
   .content-column{
     width: 100%;
+  }
+
+  .about-me{
+    text-align: center;
   }
 
   .main-photo{
@@ -245,6 +253,10 @@ and (min-width : 1224px) {
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
+  body{
+    font-size: 19px;
+  }
+
   .wrapper{
     width: 92.25rem;
   }

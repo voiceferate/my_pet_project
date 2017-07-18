@@ -83,6 +83,11 @@
   padding-left: 77px;
 }
 
+.contacts__info a{
+  color: inherit;
+  
+}
+
 .copyright{
   margin-top: 30px;
   text-align: center;

@@ -45,4 +45,13 @@
   width: 40.46%;
   vertical-align: top;
   margin-left: 190px;
+  border-radius: 50%;
+  border: 4px solid #fb6470;
+  max-width: 462px;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.main-photo{
 }
