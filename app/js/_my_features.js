@@ -45,18 +45,14 @@ window.addEventListener('scroll', function() {
     var skillScroll = $('#skills').offset().top,
         windowScroll = $(document).scrollTop(),
         windowPosition = skillScroll - windowScroll,
-        animateWidth = $('.skill-progress__width')
+        animateWidth = $('.skill-progress__width');
 
     if (windowPosition < 350 && windowPosition > 300) {
       animateWidth.addClass('active');
       
-      // for (var i = animateWidth.length - 1; i >= 0; i--) {
-      //   console.log(animateWidth[i].data(width)) 
-      // }
-      console.log(animateWidth.data('width'))
-      // animateWidth.css('width', animateWidth.data('width')) 
-
-    }
+      for (var i = animateWidth.length - 1; i >= 0; i--) {
+        $(animateWidth[i]).css('width', $(animateWidth[i]).data('width'))        
+      }};
     
     });
 
