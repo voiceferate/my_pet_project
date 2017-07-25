@@ -70,6 +70,12 @@
                   translateY: -17,
                   rotateZ: -45
               }, animOptions);
+
+              if ($(document).scrollTop() < 700 ) {
+                $('.hmbgr__item').last().addClass('hidden')
+              } else {
+                $('.hmbgr__item').last().removeClass('hidden')
+              }
           }
 
           $el.toggleClass("active");
