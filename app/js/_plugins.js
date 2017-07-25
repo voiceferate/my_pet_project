@@ -35,7 +35,19 @@
 
       var open = false;
 
-      $(".js-toggle").on("click", function() {
+      $('body').click(function (e) {
+        if ($(e.target).parents().hasClass('js-toggle')) {
+          $(".hmbgr").toggleClass('hidden');
+          change ();
+        } 
+        else if ($('.js-toggle').hasClass("active")) { 
+          $(".hmbgr").addClass('hidden');
+          change ();          
+        }
+      });
+
+
+        function change () {
           var $el = $(".js-toggle");
           var $rects = $el.find("svg rect");
 
@@ -61,8 +73,8 @@
           }
 
           $el.toggleClass("active");
-          
-      });
+        };
+
   });
 
 })(window, document, jQuery);

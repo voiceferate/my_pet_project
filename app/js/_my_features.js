@@ -47,21 +47,13 @@ window.addEventListener('scroll', function() {
 
 })();
 
-(function(){
+// (function(){
 
-$(document).ready(function(){
-    $(".js-toggle").click(function(){
-        if ($(".js-toggle").hasClass("active")) {
-          $(".hmbgr").addClass('hidden');
-        } else $(".hmbgr").removeClass('hidden');
-    });
-    $(".hmbgr").click(function(){
-       $(".js-toggle").trigger('click')
-    });
-    
-});
+// $(document).ready(function(){
 
-})();
+// });
+
+// })();
 
 
 

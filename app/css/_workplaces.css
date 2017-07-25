@@ -11,10 +11,10 @@
   content: '';
   display: block;
   width: 2px;
-  height: 100%;
+  height: 95%;
   background-color: #3e3e3e;
   position: absolute;
-  top: 0;
+  top: 17px;
   left: 49.95%;
 }
 
@@ -28,6 +28,7 @@
 .section-content__center-line {
   height: 100%;
   display: inline-block;
+  padding: 20px 0;
 }
 
 .content-card {
