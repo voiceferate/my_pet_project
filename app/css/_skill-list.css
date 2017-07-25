@@ -38,11 +38,14 @@
 .skill-progress__width{
   height: 5px;
   background-color:  #fb6470;
-  width: 80%;
+  width: 0%;
   display: inline-block;
   vertical-align: top;
   position: relative;
+  transition: width 1.9s ease-out;
 }
+
+
 
 .skill-progress__circle{
   position: absolute;

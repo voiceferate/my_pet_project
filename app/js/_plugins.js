@@ -71,7 +71,7 @@
                   rotateZ: -45
               }, animOptions);
 
-              if ($(document).scrollTop() < 700 ) {
+              if ($(document).scrollTop() < 600 ) {
                 $('.hmbgr__item').last().addClass('hidden')
               } else {
                 $('.hmbgr__item').last().removeClass('hidden')
