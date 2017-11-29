@@ -54,6 +54,7 @@
 
 
 .contacts{
+  position: relative;
   display: inline-block;
   width: 38%;
   vertical-align: top;
@@ -67,15 +68,22 @@
   position: relative;
 }
 
-.contacts__caption:before{
-  content: '';
+.contacts__element{
+  position: relative;
+}
+
+.contacts__icon{
   display: inline-block;
   position: absolute;
   width: 32px;
   height: 32px;
-  background-color: #fb6470;
+  line-height: 32px;
+  text-align: center;
+  color: #fb6470;
+  font-size: 1.8em;
+  text-shadow: 2px 2px 18px #000;
   left: 0;
-  top: 70%;
+  top: 7%;
 }
 
 .contacts__info{

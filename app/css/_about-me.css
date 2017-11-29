@@ -43,6 +43,7 @@
 .main-photo{
   display: inline-block;
   width: 40.46%;
+  height: 100%;
   vertical-align: top;
   margin-left: 190px;
   border-radius: 50%;
